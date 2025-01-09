@@ -1,11 +1,13 @@
 import React from "react"
 import Flow from "./Flow"
 import NodeDescription from "./NodeDescription"
+// import Demo from "../components/Demo"
 
 export default function index() {
   return (
     <div>
       <div>
+        {/* <Demo /> */}
         <h1>esto va a ser parte del portafolio</h1>
         <p>
           aqui va a estar el portafolio de proyectos que he realizado en el
