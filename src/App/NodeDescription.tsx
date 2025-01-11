@@ -1,26 +1,15 @@
-import React from "react"
-import {nodeStore} from "../stores/nodeStore.jsx"
-
-import ReactPage from "./views/ReactPage.js";
-import ReactNativePage from "./views/ReactNativePage.js";
-import NextPage from "./views/NextPage.js";
+import StackDescription from "./views/StackDescription.js";
+import {nodeStore} from "../stores/nodeStore.js"
+import {nodes} from "./nodes.js"
 
 export default function NodeDescription() {
-  
-  const {nodeName} = nodeStore()
-  console.log('nodeDescription', nodeName);
+  const {activeNode} = nodeStore()
   return (
-    <div className="justify-center items-center p-6">
-      {/* <h1 className="text-2xl font-bold text-center">{nodeName}</h1> */}
-      {/* <p className="text-sm"> */}
-        {nodeDescriptions[nodeName]}
-      {/* </p> */}
+    <div className="justify-center items-center p-6 animate-fade-in" key={activeNode}>
+      <StackDescription 
+        title={nodes[activeNode].data.title} 
+        description={nodes[activeNode].data.description}
+      />
     </div>
   )
-}
-
-const nodeDescriptions = {
-  2: <ReactPage/>,
-  3: <ReactNativePage/>,
-  4: <NextPage/>
 }
