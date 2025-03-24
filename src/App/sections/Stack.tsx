@@ -1,18 +1,15 @@
-import React from 'react'
 import Flow from "../Flow"
 import NodeDescription from "../NodeDescription"
 
 function Stack() {
   return (
-    <section className='h-[90vh] snap-start' id='stack'>
-      <div className="flex h-[90vh]">
-        <div className="w-[65%]">
+    <section className='h-[90vh] snap-start flex flex-col sm:flex-row ' id='stack'>
+        <div className="sm:w-[65%]">
           <Flow />
         </div>
-        <div className="w-[35%] bg-slate-700">
+        <div className="sm:w-[35%] h-[50hv] bg-slate-700">
           <NodeDescription />
         </div>
-      </div>
     </section>
   )
 }

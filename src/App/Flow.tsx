@@ -42,7 +42,7 @@ const edgeTypes = {
 }
 const nodeOrigin: NodeOrigin = [0.5, 0.5]
 
-const connectionLineStyle = { stroke: "#F6AD55", strokeWidth: 3 }
+const connectionLineStyle = { stroke: "#5558f6", strokeWidth: 3 }
 const defaultEdgeOptions = { style: connectionLineStyle, type: "mindmap" }
 
 function Flow() {
@@ -89,10 +89,10 @@ function Flow() {
         preventScrolling={false}
         className="bg-purple-300"
       >
-        <MiniMap />
+        {/* <MiniMap /> */}
         <Controls showInteractive={false} />
         <Background />
-        <Panel position="top-left">react flow mind map</Panel>
+        {/* <Panel position="top-left">react flow mind map</Panel> */}
       </ReactFlow>
     </div>
   )

@@ -1,8 +1,9 @@
-import About from "./sections/About.jsx"
-import Footer from "./sections/Footer.jsx"
-import Navbar from "./sections/Navbar.jsx"
-import Home from "./sections/Home.jsx"
-import Stack from "./sections/Stack.jsx"
+import Home from "./sections/Home"
+import Stack from "./sections/Stack"
+import About from "./sections/About"
+import Footer from "./sections/Footer"
+import Navbar from "./sections/Navbar"
+import Work from "./sections/Work"
 
 export default function index() {
   return (
@@ -12,6 +13,7 @@ export default function index() {
         <Home />
         <About />
         <Stack />
+        <Work />
         {/* <Footer /> */}
       </div>
     </main>

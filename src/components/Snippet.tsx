@@ -2,7 +2,6 @@ import React from 'react';
 
 function Snippet() {
   return (
-    <div className="min-h-screen bg-[#1e1e1e] p-8 font-mono">
       <div className="bg-[#1e1e1e] rounded-lg shadow-xl max-w-3xl mx-auto">
         {/* Barra de título */}
         <div className="flex items-center justify-between px-4 py-2 bg-[#323233] rounded-t-lg">
@@ -41,7 +40,6 @@ function Snippet() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
