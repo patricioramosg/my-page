@@ -9,6 +9,7 @@ export default function NodeDescription() {
       <StackDescription 
         title={nodes[activeNode].data.title} 
         description={nodes[activeNode].data.description}
+        emoji={nodes[activeNode].data.emoji}
       />
     </div>
   )

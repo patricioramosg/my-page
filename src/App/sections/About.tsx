@@ -1,5 +1,6 @@
 import React from 'react'
 import Snippet from "../../components/Snippet"
+import Sinergy from './Sinergy'
 
 function About() {
   return (
@@ -7,8 +8,9 @@ function About() {
       className='h-[90vh] flex bg-teal-300 snap-start' 
       id='about'
     >
-      <p>about</p>
-      <Snippet/>
+      <div className="h-full overflow-y-auto">
+        <Sinergy/>
+      </div>
     </section>
   )
 }

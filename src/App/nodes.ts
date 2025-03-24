@@ -10,7 +10,14 @@ import {
   testingIcon,
   devopsIcon,
   agileIcon,
-  tsIcon
+  tsIcon,
+  playstoreIcon,
+  appstoreIcon,
+  jestIcon,
+  githubIcon,
+  expoIcon,
+  cubeIcon,
+  squareIcon
 } from "../assets"
 
 export const nodes = [
@@ -23,7 +30,7 @@ export const nodes = [
   {
     id: "1",
     type: "custom",
-    data: { 
+    data: {
       title: "STACK",
       description: "CTO",
       emoji: jsIcon
@@ -33,9 +40,10 @@ export const nodes = [
   {
     id: "2",
     type: "custom",
-    data: { 
+    data: {
       title: "React",
-      description: "react description",
+      description:
+        "Tengo experiencia en el desarrollo de interfaces web dinámicas y modulares utilizando React. Me especializo en la creación de componentes reutilizables, gestión de estados locales y globales, y optimización del rendimiento mediante técnicas avanzadas como memoization y lazy loading.",
       emoji: reactIcon
     },
     position: { x: 0, y: 200 }
@@ -43,19 +51,21 @@ export const nodes = [
   {
     id: "3",
     type: "custom",
-    data: { 
+    data: {
       title: "React Native",
-      description: "react native description",
-      emoji: reactIcon 
+      description:
+        "En el ámbito de desarrollo móvil, utilizo React Native para construir aplicaciones multiplataforma de alto rendimiento. Me destaco en la integración de componentes nativos, manejo de librerías específicas como Reanimated, y adaptación de diseños responsivos para dispositivos iOS y Android.",
+      emoji: reactIcon
     },
     position: { x: 0, y: 300 }
   },
   {
     id: "4",
     type: "custom",
-    data: { 
+    data: {
       title: "Next",
-      description: "next description",
+      description:
+        "He trabajado con Next.js para construir aplicaciones web escalables y optimizadas para SEO, aprovechando sus capacidades de renderizado híbrido (SSR y SSG) y generación de rutas dinámicas. También he utilizado Next para implementar estrategias de despliegue eficientes y manejar datos desde APIs.",
       emoji: nextIcon
     },
     position: { x: 0, y: 400 }
@@ -63,39 +73,43 @@ export const nodes = [
   {
     id: "5",
     type: "custom",
-    data: { 
+    data: {
       title: "State Management",
-      description: "Poseo experiencia en el manejo avanzado del estado utilizando librerías como Redux, Zustand y Context API. Esto incluye la gestión de estados globales y locales, implementación de patrones de arquitectura limpios y optimización del flujo de datos en aplicaciones complejas.",
-      emoji: jsIcon
+      description:
+        "Poseo experiencia en el manejo avanzado del estado utilizando librerías como Redux, Zustand y Context API. Esto incluye la gestión de estados globales y locales, implementación de patrones de arquitectura limpios y optimización del flujo de datos en aplicaciones complejas.",
+      emoji: reduxIcon
     },
     position: { x: 0, y: 500 }
   },
   {
     id: "6",
     type: "custom",
-    data: { 
+    data: {
       title: "2D Graphics",
-      description: "Mi experiencia incluye el desarrollo de gráficos 2D interactivos y animaciones fluidas usando librerías como Reanimated y React Spring. He creado transiciones personalizadas y animaciones optimizadas para interfaces visualmente atractivas.",
-      emoji: jsIcon
+      description:
+        "Mi experiencia incluye el desarrollo de gráficos 2D interactivos y animaciones fluidas usando librerías como Reanimated y React Spring. He creado transiciones personalizadas y animaciones optimizadas para interfaces visualmente atractivas.",
+      emoji: squareIcon
     },
     position: { x: 0, y: 600 }
   },
   {
     id: "7",
     type: "custom",
-    data: { 
+    data: {
       title: "3D Graphics",
-      description: "He desarrollado experiencias tridimensionales interactivas, utilizando librerías y herramientas que permiten la creación de escenas complejas con optimización de rendimiento para web y móvil.",
-      emoji: jsIcon
+      description:
+        "He desarrollado experiencias tridimensionales interactivas, utilizando librerías y herramientas que permiten la creación de escenas complejas con optimización de rendimiento para web y móvil.",
+      emoji: cubeIcon
     },
     position: { x: 0, y: 700 }
   },
   {
     id: "8",
     type: "custom",
-    data: { 
+    data: {
       title: "Three.js",
-      description: "En proyectos 3D, utilizo Three.js para renderizar escenas avanzadas, manipular geometrías, materiales y animaciones, asegurando una experiencia inmersiva y fluida. También he trabajado con React Three Fiber para integrar Three.js en React Native y web.",
+      description:
+        "En proyectos 3D, utilizo Three.js para renderizar escenas avanzadas, manipular geometrías, materiales y animaciones, asegurando una experiencia inmersiva y fluida. También he trabajado con React Three Fiber para integrar Three.js en React Native y web.",
       emoji: threeIcon
     },
     position: { x: 0, y: 800 }
@@ -103,9 +117,10 @@ export const nodes = [
   {
     id: "9",
     type: "custom",
-    data: { 
+    data: {
       title: "Blender",
-      description: "Tengo habilidades en el modelado 3D con Blender, creando modelos detallados, texturas y animaciones que pueden integrarse en proyectos interactivos. También optimizo activos 3D para garantizar un rendimiento adecuado en entornos de tiempo real.",
+      description:
+        "Tengo habilidades en el modelado 3D con Blender, creando modelos detallados, texturas y animaciones que pueden integrarse en proyectos interactivos. También optimizo activos 3D para garantizar un rendimiento adecuado en entornos de tiempo real.",
       emoji: blenderIcon
     },
     position: { x: 0, y: 900 }
@@ -113,17 +128,18 @@ export const nodes = [
   {
     id: "10",
     type: "custom",
-    data: { 
+    data: {
       title: "UI Libraries",
-      description: "He utilizado librerías de diseño como Material UI, TailwindCSS y NativeWind para desarrollar interfaces modernas y consistentes, adaptadas a las necesidades del usuario y optimizadas para diferentes plataformas.",
-      emoji: jsIcon
+      description:
+        "He utilizado librerías de diseño como Material UI, TailwindCSS y NativeWind para desarrollar interfaces modernas y consistentes, adaptadas a las necesidades del usuario y optimizadas para diferentes plataformas.",
+      emoji: tailwindIcon
     },
     position: { x: 0, y: 1000 }
   },
   {
     id: "11",
     type: "custom",
-    data: { 
+    data: {
       title: "Third Party Integrations",
       description: "",
       emoji: jsIcon
@@ -133,9 +149,10 @@ export const nodes = [
   {
     id: "12",
     type: "custom",
-    data: { 
+    data: {
       title: "Authentication",
-      description: "He implementado sistemas de autenticación seguros utilizando OAuth, Firebase Auth y JWT. Esto incluye la configuración de autenticación social, manejo de tokens y medidas de seguridad adicionales para proteger datos sensibles.",
+      description:
+        "He implementado sistemas de autenticación seguros utilizando OAuth, Firebase Auth y JWT. Esto incluye la configuración de autenticación social, manejo de tokens y medidas de seguridad adicionales para proteger datos sensibles.",
       emoji: jsIcon
     },
     position: { x: 0, y: 1200 }
@@ -143,9 +160,10 @@ export const nodes = [
   {
     id: "13",
     type: "custom",
-    data: { 
+    data: {
       title: "Payments",
-      description: "Tengo experiencia en la integración de plataformas de pago como Stripe y PayPal, asegurando transacciones seguras y fluidas, y personalizando flujos de pago según las necesidades del cliente.",
+      description:
+        "Tengo experiencia en la integración de plataformas de pago como Stripe y PayPal, asegurando transacciones seguras y fluidas, y personalizando flujos de pago según las necesidades del cliente.",
       emoji: jsIcon
     },
     position: { x: 0, y: 1300 }
@@ -153,9 +171,10 @@ export const nodes = [
   {
     id: "14",
     type: "custom",
-    data: { 
+    data: {
       title: "Push Notifications",
-      description: "He configurado y gestionado notificaciones push utilizando Firebase y Expo, permitiendo una comunicación efectiva con los usuarios y personalizando la experiencia según sus preferencias.",
+      description:
+        "He configurado y gestionado notificaciones push utilizando Firebase y Expo, permitiendo una comunicación efectiva con los usuarios y personalizando la experiencia según sus preferencias.",
       emoji: jsIcon
     },
     position: { x: 0, y: 1400 }
@@ -163,9 +182,10 @@ export const nodes = [
   {
     id: "15",
     type: "custom",
-    data: { 
+    data: {
       title: "Analytics",
-      description: "He trabajado con herramientas como Google Analytics y Firebase Analytics para rastrear métricas clave, analizar el comportamiento del usuario y tomar decisiones informadas para mejorar la experiencia de las aplicaciones.",
+      description:
+        "He trabajado con herramientas como Google Analytics y Firebase Analytics para rastrear métricas clave, analizar el comportamiento del usuario y tomar decisiones informadas para mejorar la experiencia de las aplicaciones.",
       emoji: jsIcon
     },
     position: { x: 0, y: 1500 }
@@ -173,9 +193,10 @@ export const nodes = [
   {
     id: "16",
     type: "custom",
-    data: { 
+    data: {
       title: "UX/UI",
-      description: "Diseño interfaces intuitivas y centradas en el usuario, combinando principios de diseño funcional con una estética moderna. Realizo pruebas de usabilidad para garantizar una experiencia consistente y atractiva.",
+      description:
+        "Diseño interfaces intuitivas y centradas en el usuario, combinando principios de diseño funcional con una estética moderna. Realizo pruebas de usabilidad para garantizar una experiencia consistente y atractiva.",
       emoji: jsIcon
     },
     position: { x: 0, y: 1600 }
@@ -193,9 +214,10 @@ export const nodes = [
   {
     id: "18",
     type: "custom",
-    data: { 
+    data: {
       title: "Metodologías Ágiles",
-      description: "Tengo experiencia trabajando bajo metodologías ágiles como Scrum y Kanban, priorizando tareas, participando en reuniones de planificación y asegurando entregas dentro de los plazos establecidos.",
+      description:
+        "Tengo experiencia trabajando bajo metodologías ágiles como Scrum y Kanban, priorizando tareas, participando en reuniones de planificación y asegurando entregas dentro de los plazos establecidos.",
       emoji: agileIcon
     },
     position: { x: 0, y: 1800 }
@@ -203,7 +225,7 @@ export const nodes = [
   {
     id: "19",
     type: "custom",
-    data: { 
+    data: {
       title: "DevOps",
       description: "",
       emoji: devopsIcon
@@ -213,9 +235,10 @@ export const nodes = [
   {
     id: "20",
     type: "custom",
-    data: { 
+    data: {
       title: "Version Control",
-      description: "Soy competente en Git y GitHub, manejando ramas, resolviendo conflictos y colaborando en proyectos de equipo con flujos de trabajo como Gitflow.",
+      description:
+        "Soy competente en Git y GitHub, manejando ramas, resolviendo conflictos y colaborando en proyectos de equipo con flujos de trabajo como Gitflow.",
       emoji: gitIcon
     },
     position: { x: 0, y: 2000 }
@@ -223,9 +246,10 @@ export const nodes = [
   {
     id: "21",
     type: "custom",
-    data: { 
+    data: {
       title: "CI/CD",
-      description: "He implementado pipelines de integración y entrega continua, automatizando pruebas, despliegues y revisiones para mejorar la eficiencia del desarrollo y la calidad del producto.",
+      description:
+        "He implementado pipelines de integración y entrega continua, automatizando pruebas, despliegues y revisiones para mejorar la eficiencia del desarrollo y la calidad del producto.",
       emoji: jsIcon
     },
     position: { x: 0, y: 2100 }
@@ -233,11 +257,78 @@ export const nodes = [
   {
     id: "22",
     type: "custom",
-    data: { 
+    data: {
       title: "Testing",
-      description: "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
       emoji: testingIcon
     },
     position: { x: 0, y: 2200 }
-  }
+  },
+  {
+    id: "23",
+    type: "custom",
+    data: {
+      title: "Typescript",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      emoji: tsIcon
+    },
+    position: { x: 0, y: 2300 }
+  },
+  {
+    id: "24",
+    type: "custom",
+    data: {
+      title: "Playstore",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      emoji: playstoreIcon
+    },
+    position: { x: 0, y: 2400 }
+  },
+  {
+    id: "25",
+    type: "custom",
+    data: {
+      title: "App Store",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      emoji: appstoreIcon
+    },
+    position: { x: 0, y: 2500 }
+  },
+  {
+    id: "26",
+    type: "custom",
+    data: {
+      title: "Jest",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      emoji: jestIcon
+    },
+    position: { x: 0, y: 2600 }
+  },
+  {
+    id: "27",
+    type: "custom",
+    data: {
+      title: "Github Actions",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      emoji: githubIcon
+    },
+    position: { x: 0, y: 2700 }
+  },
+  {
+    id: "28",
+    type: "custom",
+    data: {
+      title: "Expo",
+      description:
+        "Tengo experiencia escribiendo pruebas unitarias con Jest y pruebas de integración para asegurar la funcionalidad y calidad del código. Esto incluye el uso de mocks y configuraciones avanzadas para cubrir casos complejos.",
+      emoji: expoIcon
+    },
+    position: { x: 0, y: 2800 }
+  },
 ]

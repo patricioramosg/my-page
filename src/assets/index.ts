@@ -15,6 +15,8 @@ import tailwindIcon from "./tailwindIcon.png"
 import testingIcon from "./testingIcon.png"
 import tsIcon from "./tsIcon.png"
 import threeIcon from "./threeIcon.svg"
+import cubeIcon from "./cube.gif"
+import squareIcon from "./square.gif"
 
 export {
   agileIcon,
@@ -33,5 +35,7 @@ export {
   tailwindIcon,
   testingIcon,
   tsIcon,
-  threeIcon
+  threeIcon,
+  cubeIcon,
+  squareIcon
 } 
